@@ -6,7 +6,7 @@ A repository containing various Dockerfiles and related configuration for buildi
 
 ## 📦 Overview
 
-This repository provides a collection of Dockerfiles and supporting scripts for building, testing, and deploying containerized environments. It is intended to help developers and DevOps engineers quickly bootstrap their workflows using Docker.
+This repository provides a collection of Dockerfiles and supporting scripts for building, testing, and deploying containerized environments. It is intended to help developers and DevOps engineers quic[...]
 
 ---
 
@@ -34,7 +34,7 @@ This repository provides a collection of Dockerfiles and supporting scripts for 
 ## 📝 Docker Documentation
 
 ### What is Docker? ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-Docker is an open-source platform that automates the deployment, scaling, and management of applications inside lightweight containers. Containers package code and dependencies together, ensuring consistency across environments.
+Docker is an open-source platform that automates the deployment, scaling, and management of applications inside lightweight containers. Containers package code and dependencies together, ensuring cons[...]
 
 ### Common Docker Commands
 
@@ -98,6 +98,7 @@ Contributions are welcome! Please open issues or pull requests for improvements,
 - [Docker Documentation](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
 - [Awesome Docker](https://github.com/veggiemonk/awesome-docker)
-
+- [dash90 Docker Hub Repository](https://hub.docker.com/repositories/dash90)  
+  This is my Docker Hub repository, where you'll find various container images built from the Dockerfiles in this project. Browse, pull, and use these images for your development and deployment needs.
 
 > **Maintainer:** [ashd90](https://github.com/ashd90)
