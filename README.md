@@ -1,6 +1,9 @@
 # docker-files ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github)
 
-A repository containing various Dockerfiles and related configuration for building and running containerized applications.
+[![Docker Hub Repository](https://img.shields.io/badge/Docker%20Hub-dash90-blue?logo=docker)](https://hub.docker.com/repositories/dash90)
+
+> **Docker Hub Repository Description:**  
+The [dash90 Docker Hub repository](https://hub.docker.com/repositories/dash90) hosts pre-built container images for various development environments and applications. These images are designed for quick deployment and easy integration into CI/CD pipelines, covering languages and tools such as Python, Nginx, and more. Each image is maintained and updated to ensure security, best practices, and compatibility with modern development workflows.
 
 ---
 
@@ -98,7 +101,6 @@ Contributions are welcome! Please open issues or pull requests for improvements,
 - [Docker Documentation](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
 - [Awesome Docker](https://github.com/veggiemonk/awesome-docker)
-- [dash90 Docker Hub Repository](https://hub.docker.com/repositories/dash90)  
-  This is my Docker Hub repository, where you'll find various container images built from the Dockerfiles in this project. Browse, pull, and use these images for your development and deployment needs.
+
 
 > **Maintainer:** [ashd90](https://github.com/ashd90)
