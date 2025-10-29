@@ -76,8 +76,6 @@ docker-files/
 ├── Dockerfile.node
 ├── Dockerfile.python
 ├── Dockerfile.nginx
-├── scripts/
-│   └── entrypoint.sh
 ├── README.md
 ```
 
