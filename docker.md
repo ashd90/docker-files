@@ -26,3 +26,11 @@ docker container run -d \
   --network webapp-network \
   wordpress:latest
 ```
+
+## Start Mysql_db
+
+```bash
+docker run -d -e MYSQL_ALLOW_EMPTY_PASSWORD=yes \
+--mount source=mysql_db,target=/var/lib/mysql \
+--name mysql mysql:latest
+```
