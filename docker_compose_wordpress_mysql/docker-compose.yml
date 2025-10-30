@@ -1,5 +1,3 @@
-version: '3' #Version of YML file
-
 services:
   # MySQL Service
   db:
