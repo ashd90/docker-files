@@ -34,3 +34,9 @@ docker run -d -e MYSQL_ALLOW_EMPTY_PASSWORD=yes \
 --mount source=mysql_db,target=/var/lib/mysql \
 --name mysql mysql:latest
 ```
+
+## Bind the hostmachine path to container
+
+```bash
+docker container run -d -p 8000:80 --mount type=bind,source=./nginx-profile/,target=/usr/share/nginx/html/ --name nginx-2 nginx:latest
+```
