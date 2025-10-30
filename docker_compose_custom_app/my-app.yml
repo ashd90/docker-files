@@ -1,0 +1,14 @@
+services:
+  node-app:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    image: dash90/custom_nodeapp:1.0
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
