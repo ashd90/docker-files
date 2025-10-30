@@ -3,7 +3,7 @@ version: '3' #Version of YML file
 services:
   # MySQL Service
   db:
-    image: mysql:5.7
+    image: mysql:9
     container_name: mysql-container
     restart: always
     environment:
