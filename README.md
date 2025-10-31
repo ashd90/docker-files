@@ -3,7 +3,7 @@
 [![Docker Hub Repository](https://img.shields.io/badge/Docker%20Hub-dash90-blue?logo=docker)](https://hub.docker.com/repositories/dash90)
 
 > **Docker Hub Repository Description:**  
-The [dash90 Docker Hub repository](https://hub.docker.com/repositories/dash90) hosts pre-built container images for various development environments and applications. These images are designed for quick deployment and easy integration into CI/CD pipelines, covering languages and tools such as Python, Nginx, and more. Each image is maintained and updated to ensure security, best practices, and compatibility with modern development workflows.
+The [dash90 Docker Hub repository](https://hub.docker.com/repositories/dash90) hosts pre-built container images for various development environments and applications. These images are designed for quick deployment and easy integration into CI/CD pipelines, covering languages and tools such as Python, Nginx, Wordpress, Mysql and more. Each image is maintained and updated to ensure security, best practices, and compatibility with modern development workflows.
 
 ---
 
