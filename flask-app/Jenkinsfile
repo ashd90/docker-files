@@ -16,7 +16,7 @@ pipeline {
               sh 'echo "$DOCKERHUB_PWD" | docker login -u "$DOCKERHUB_USER" --password-stdin'
               sh 'docker push "$IMAGE:$TAG"'
               sh 'docker push "$IMAGE:latest"'
-}
+              }
             }
           }
         stage ('deploy') {
@@ -32,17 +32,21 @@ pipeline {
               branch: $GIT_BRANCH
               time: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
               url: $BUILD_URL
-            EOF
-          '''
+              EOF
+              '''
 
               archiveArtifacts artifacts: "deploy-info-${BUILD_NUMBER}.txt", fingerprint: true
-    }
 
-   }
+            }
           }
         stage ('test') {
           steps{
               sh 'sleep 2;echo "Hit http://localhost:5000 to see the app."'
+            }
+          }
+        stage('cleanup') {
+          steps {
+            cleanWs() 
             }
           }
       }
