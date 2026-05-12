@@ -44,7 +44,7 @@ pipeline {
               sh 'sleep 2;echo "Hit http://localhost:5000 to see the app."'
             }
           }
-        stage('cleanup') {
+        stage ('cleanup') {
           steps {
             cleanWs() 
             }
