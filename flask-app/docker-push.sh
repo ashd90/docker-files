@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# 1) Docker login (uses injected env vars)
+echo "Logging in to Docker Hub..."
+echo "$DOCKERHUB_PWD" | docker login -u "$DOCKERHUB_USER" --password-stdin
+
+# 2) Image naming
+IMAGE="docker.io/dash90/flask-app"
+TAG="${BUILD_NUMBER}"
+
+# 3) Build and push (exact tag + latest for convenience)
+echo "Building image..."
+docker build -t "$IMAGE:$TAG" -t "$IMAGE:latest" ./flask-app
+
+echo "Pushing image..."
+docker push "$IMAGE:$TAG"
+docker push "$IMAGE:latest"
+
+# 4) Deploy on the Docker host (DooD)
+echo "Deploying..."
+docker pull "$IMAGE:$TAG"
+docker rm -f flask-app || true
+docker run -d --name flask-app -p 5000:5000 "$IMAGE:$TAG"
+
+# 5) Quick smoke check (optional)
+sleep 2
+echo "Hit http://localhost:5000 to see the app."
+
+# 6) Cleaning workspace
+echo "Cleaning workspace..."
+rm -rf "$WORKSPACE"/* || true
