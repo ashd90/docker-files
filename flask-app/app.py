@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.get("/")
 def hello():
     return jsonify(
-        message="✨ Welcome ✨",
+        message="Flask Container running in docker shipped by Jenkins",
         tip="Built with Flask, shipped by Jenkins, running in Docker.",
     )
 
